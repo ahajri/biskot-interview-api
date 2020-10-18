@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 public interface CartService {
 
-    void createCart();
+    void createCart(Cart cart);
 
     Cart getCart(long cartId);
 

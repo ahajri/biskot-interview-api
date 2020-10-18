@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CartServiceImpl implements CartService {
     @Override
-    public void createCart() {
+    public void createCart(Cart cart) {
         // TODO: to be implemented
     }
 

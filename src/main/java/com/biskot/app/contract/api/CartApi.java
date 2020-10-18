@@ -7,6 +7,7 @@ package com.biskot.app.contract.api;
 
 import com.biskot.app.contract.model.AddItemRequest;
 import com.biskot.app.contract.model.CartResponse;
+import com.biskot.domain.model.Cart;
 import io.swagger.annotations.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -63,7 +64,7 @@ public interface CartApi {
         @ApiResponse(code = 200, message = "Cart initialized") })
     @RequestMapping(value = "/carts",
         method = RequestMethod.POST)
-    ResponseEntity<Void> createCart();
+    ResponseEntity<Void> createCart(@RequestBody Cart cart);
 
 
     /**
